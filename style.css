@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6f7ff;
+  color: #023033;
+}
+
+nav {
+    background-image: url("./imagens/gif.cora.gif");
+  display: flex;
+  font-family: 'Ink Free', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 20px;
+  color: rgb(158, 203, 170);
+}
+nav h1 {
+  margin: 0;
+  font-size: 25px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: rgb(158, 203, 170);
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  padding: 20px 20px;
+  background: linear-gradient(0deg,rgb(216, 221, 121) 0%, rgb(159, 167, 107) 100%);
+}
+header h2 {
+    font-size: 24px;
+    color: rgb(181, 228, 193);
+}
+header p {
+    font-size: 16px;
+    color: rgb(74, 77, 75);
+    max-width: 600px;
+    margin: 0 auto;
+}
+header img {
+    max-width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0px 5px rgb(0, 0, 0,1);
+}
+
+#trailer {
+    background: linear-gradient(0deg,rgb(145, 148, 102) 0%, rgb(rgb(216, 221, 121)));
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.header {
+    background-color:rgb(20, 20, 20);
+  display: flex;
+  gap: 20px;
+}
+
+.card{
+  background-color: rgb(189, 202, 202);
+  border-radius: 8px;
+  padding: 10px;
+  width: 25%;
+  margin-top: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; 
+    display: block;
+    margin: 10px auto 0; 
+}
+.cards-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 20px; 
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+#elenco {
+    background: linear-gradient(0deg,rgb(25, 72, 119) 0%, rgb(107, 167, 132) 100%);
+    padding: 30px 20px;
+}
+
+#curiosidades {
+    background-image: url("./imagens/Tunel.webp");
+    margin-top: 0px;
+    padding: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+#curiosidades h2 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+}
+#curiosidades h3{
+    font-size: 25px;
+    color: rgb(25, 4, 33);
+}
+.curiosidades-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+.curiosidade-card {
+    background-color: rgb(44, 25, 112); 
+    padding: 20px;
+    width: 28%;
+    min-width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+.curiosidade-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.curiosidade-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #f8f6f6;
+    margin: 0;
+}
+
+#contato {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url("./imagens/estrelas.gif");
+}
+
+#contato h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #87a0db; 
+}
+.contato-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-image: url("./imagens/estrelas.gif");
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #6d8fb5;
+    font-size: 0.95rem;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+
+
+.btn-enviar {
+    background-color: #110b4d;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #4f4f75;
+    transform: scale(1.02);
+}
+
+.btn-enviar:active {
+    transform: scale(0.98);
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #050505;
+  color: white;
+  margin-top: 20px;
+}
